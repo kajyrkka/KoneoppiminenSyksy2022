@@ -22,12 +22,14 @@ kloonataan omalle koneelle siihen hakemistoon, missä halutaan pitää kurssin P
 	
 Koneoppiminen hakemistoon asennetaan python -m virtualenv koodit -komennolla pythonin virtual environment
 
-Koneoppiminen hakemistoon lisätään .gitignore tiedosto ja sinne rivit (jotta Python asennusta ei kopioida githubiin, 
-vain koodit hakemisto ja sen sisällä olevat python koodit)
+Koneoppiminen hakemistoon lisätään .gitignore tiedosto ja sinne seuraavat rivit: (
 
 koodit/Lib
+
 koodit/Scripts
+
 koodit/.gitignore
+
 koodit/pyvenv.cfg
 
 Ja sitten git add . , git commit -m "Python virtual environment for koneoppiminen", git push origin main -komennot. 
