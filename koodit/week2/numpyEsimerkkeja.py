@@ -12,6 +12,15 @@ import numpy as np
     vektori = np.array([1,2,3]) => print("vektorin shape = ",vektori.shape) 
 '''
 
+a = np.arange(1,10,1)
+print(a)
+b = np.flip(a)
+print(b)
+
+
+'''
+
+
 a = np.array([[1,2,3],[4,5,6]]) # => Hankalaa!
 print("vektori a = ",a," ja vektorin shape = ",a.shape,a.dtype)
 
@@ -24,3 +33,5 @@ d = np.ones(10)
 print("c*d on helppo jos molemmat yhtä pitkiä ja saman suuntaisia vektoreita =", c*d)
 
 print("shape d = ", d.shape)
+
+'''
