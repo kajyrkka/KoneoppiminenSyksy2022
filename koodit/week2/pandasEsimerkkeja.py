@@ -38,6 +38,7 @@ Oman koodin kanssa värkätessä opittuja asioita:
    tiedosto on varmasti samassa hakemistossa kuin Pandas koodikin, niin silloin
    polun tiedostoon joutuu antamaan muodossa df = read_csv(c\\)
    df = read_csv('C:\\KoneoppiminenSyksy2022\\koodit\\week2\\national-history.csv')
+   df = read_csv('C:/KoneoppiminenSyksy2022/koodit/week2/national-history.csv')
 
 3. Miksi videossa dataframen saattoi printata taulukoksi vain df -komennolla ja
    VisualStudio codessa joutuu sanomaan print(df)? Ehkä siksi, että videolla kaveri
@@ -61,9 +62,9 @@ print("carrier sarakkeen min arvo = ",df['carrier'].min())
 print("carrier sarakkeen keskiarvo arvo = ",df['carrier'].mean())
 print(df['carrier'].dtype)
 count = (df['carrier'] == 1).sum()
-print('Count of zeros in Column  Carrier   : ', count)
+print('Count of ones in Column  Carrier   : ', count)
 
-'''
+
 t = df['t'].to_numpy()
 dat = df['data'].to_numpy()
 mod = df['mod'].to_numpy()
@@ -92,7 +93,7 @@ Tehtävä 1:
 -lataa https://covidtracking.com/data/download/national-history.csv tiedosto käsiteltäväksi
 
 
-
+"""
 
 df=pd.read_csv('C:\\Users\\kajyrkka\\PythonSW\\KoneoppiminenSyksy2022\\koodit\\week2\\national-history.csv',
                header=0,
@@ -149,4 +150,7 @@ print("maksimi arvo = ",df['hospitalInc'].max())
 print("Ja tuon maksimin paikka = ",df[df['hospitalInc']==df['hospitalInc'].max()].index)
 paikka = df[df['hospitalInc']==df['hospitalInc'].max()].index
 print("ja tuo tapahtui päivämäärällä = ", df['date'][paikka])
-"""
+
+print("Hnow shape = ", Hnow.shape)
+print("Hnow dtype = ", Hnow.dtype)
+'''

@@ -6,7 +6,7 @@ print komennolla
 
 lista = [1, "Second element", (1,2)]
 print("This way we take second element",lista[1], "as lista starts from element 0")
-for i in range(3):  # 0,1,2 for i in range(2,15,3)
+for i in range(3):
     print(lista[i])
 
 tuplee = (1,"TUPLE ELEMENT", (1,2,3))
@@ -17,6 +17,7 @@ for i in range(3):
 setti = {1,"huuhaa",2,(1,2,3)}
 
 print(setti)
+# https://realpython.com/python-sets/
 
 sanakirja = {"kariKoti":"0505119222","kariTyö":"0401415096","jokuMuu":"1234456"}
 print("Karin kotinumero =", sanakirja.get("kariKoti"))
